@@ -62,8 +62,8 @@ a:hover {
 	background-attachment: fixed; /*imagen de fondo se fija o se desplaza con el resto de la página.*/
 	background-repeat: no-repeat;
 
-	justify-content: center;
-	align-items: center;
+	justify-content: center; /*Solo eje X*/
+	align-items: center; /*Solo eje Y*/
 	flex-direction: column;
 	/*Elementos centrados y en columnas*/
 
@@ -84,6 +84,7 @@ a:hover {
   margin-top: 63px;
   display: inline-block;
   font-size: 14px;
+  border-radius: 5px;
 }
 
 
@@ -95,15 +96,59 @@ a:hover {
 	padding: 70px;
 }
 
-#services.flex-container{
-	justify-content: space-around;
+#services.flex-container{ /*Todo pegado para que sea service y tb flex-container*/
+	justify-content: space-around; /*Solo eje X*/
 	flex-wrap: wrap;
 }
 
 .box-services{
 	font-size: 1.2em;
 	font-weight: bold;
+	overflow: hidden;
 }
+
+.img-sevices{
+	width: 350px;
+}
+/*----------- SECTION COMPU -----------*/
+.img-fondo-compu{
+	width: 100%;
+}
+
+#fondo-compu.flex-container{
+	flex-direction: column;
+	align-items: center;
+}
+
+#fondo-compu p{
+	padding: 0 60px;
+	text-align: center;
+}
+
+/*----------- SECTION PROYECTO -----------*/
+#img-proyecto-fotos{
+	background-color: #white;
+	text-align: center;
+	padding: 20px 50px;
+}
+
+#img-proyecto-fotos.flex-container{ /*Todo pegado para que sea service y tb flex-container*/
+	flex-direction: row; /*Solo eje X*/	
+	justify-content: center;
+}
+
+
+.img-proyecto{
+	width: 350px;
+	padding: 0 30px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.img-pro{
+	width: auto;	
+}
+
 
 /*----------- FOOTER -----------*/
 footer{
@@ -114,19 +159,54 @@ footer{
   padding-top: 7px;
 }
 
+/*----------- MODAL -----------*/
+.hide{
+  display: none;
+}
+
+#img-proyecto-modal{
+  background-color: rgba(45,206,175,0.85); 
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-completo{
+  width: 600px;
+  height: 500px;
+  background-color: white; 
+  position: absolute;
+  top: 12%;
+  left: 25%;
+  padding: 10px;
+}
+
+.close-img{
+  color: rgb(45,206,175); 
+  position: absolute;
+  right: 30%;
+  top: 15%;
+  font-size: 25px;
+  cursor: pointer;
+}
 
 
+/*----------- SCROLL -----------*/
 
+.menu-dos{
+	width: 100%;
+	height: 78px;
+	background-color: #1BB7BF;
+	position: fixed;
+	top: 0;
+	left: 0;		
+}
 
-
-
-
-
-
-
-
-
-
+.menu-dos a:hover{
+	color: white;
+}
 
 
 
