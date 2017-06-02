@@ -46,6 +46,10 @@
 
 function resizeHeaderOnScroll() {
   var distanciaY = window.pageYOffset || document.documentElement.scrollTop;
+  /* 
+  window.pageYOffset:  devuelve los píxeles del documento actual.
+  scrollTop : devuelve el número de píxeles contenido de un elemento se desplaza verticalmente.
+  */
   var limite = 300;
   var elNav = document.getElementById('nav');
   
