@@ -51,8 +51,7 @@ function resizeHeaderOnScroll() {
   scrollTop : devuelve el número de píxeles contenido de un elemento se desplaza verticalmente.
   */
   var limite = 300;
-  var elNav = document.getElementById('nav');
-  
+  var elNav = document.getElementById('nav'); 
   if (distanciaY > limite) {
   	elNav.classList.add("menu-dos");    
   }else{
