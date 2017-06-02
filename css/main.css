@@ -64,8 +64,7 @@ a:hover {
 
 	justify-content: center; /*Solo eje X*/
 	align-items: center; /*Solo eje Y*/
-	flex-direction: column;
-	/*Elementos centrados y en columnas*/
+	flex-direction: column; /*Elementos centrados y en columnas*/
 
 	color: whitesmoke;
 }
