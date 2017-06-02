@@ -4,4 +4,133 @@ body {
   line-height: 1.71429;
   background-color: #fff;
   /* Enlaza la tipografia Open Sans */
+  font-family: 'Open Sans', sans-serif;
 }
+
+
+/*-------- Contenedor Flexbox --------*/
+.flex-container{
+	display: flex;
+}
+
+/*----------- Menu -----------*/
+.menu{
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.menu.flex-container{
+	justify-content: flex-start;
+}
+
+.logo-container{
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+.flex-container .logo{
+	width: 70px;
+	height: 70px;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E95853;
+}
+
+.link{
+  font-weight: 700;
+  padding: 21px;
+  display: inline-block;
+}
+
+/*----------- HOME -----------*/
+#home{
+	height: 600px;
+	margin-top: 70px;
+
+	background-image: url(../assets/images/bg-home.jpg);
+	background-position: center;
+	background-size: cover; /*cover: imagen de fondo debe ser escalada*/
+	background-attachment: fixed; /*imagen de fondo se fija o se desplaza con el resto de la página.*/
+	background-repeat: no-repeat;
+
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/*Elementos centrados y en columnas*/
+
+	color: whitesmoke;
+}
+
+.text-home{
+	font-size: 2.4em;
+}
+
+.btn-home{
+  background: #2Ecc71;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 63px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+
+/*----------- SERVICES -----------*/
+#services{
+	background-color: #F17C72;
+	text-align: center;
+	color: #fff;
+	padding: 70px;
+}
+
+#services.flex-container{
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.box-services{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/*----------- FOOTER -----------*/
+footer{
+  text-align: center;
+  height: 70px;
+  background-color: #373b47;
+  color: white;
+  padding-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
